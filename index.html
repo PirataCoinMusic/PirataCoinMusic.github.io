@@ -12,1409 +12,336 @@
     <header>
         <img src="img/Portada.webp" alt="Pirata Coin Music Logo" id="logo">
         <h1>PIRATA COIN MUSIC</h1>
-        
     </header>
 
-    <main class="song-library">
-        <!-- Song 1 -->
-        <article class="song-item" data-youtube-id="rokGy0huYEA">
-            <h2 class="song-title">Amor Pirata 1</h2>
+    <nav id="navigation-controls" class="navigation-controls">
+        <button id="back-to-titles-btn" class="action-btn" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Volver a Títulos
+        </button>
+        <button id="play-all-versions-btn" class="action-btn" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Reproducir Todas las Versiones
+        </button>
+    </nav>
+
+    <main>
+        <section id="title-selection-view" class="title-selection-view">
+            <h2>Selecciona un Título</h2>
+            <div id="title-list" class="title-list">
+                </div>
+        </section>
+
+        <section id="song-versions-view" class="song-versions-view" style="display: none;">
+            <h2 id="current-title-display"></h2>
+            <div id="song-library" class="song-library">
+                </div>
+        </section>
+    </main>
+    
+    <div id="all-songs-container" style="display: none;">
+        <article class="song-item" 
+                 data-song-title-group="Amor Pirata"
+                 data-song-version-title="Amor Pirata 1"
+                 data-youtube-id="rokGy0huYEA" 
+                 data-cover-img="img/cover_amor_pirata_1.webp"
+                 data-song-src="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF">
+            <h2 class="song-title-display">Amor Pirata 1</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_1.webp" alt="Cover for Amor Pirata 1" class="song-cover">
                     <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                     </button>
-                    <!-- YouTube iframe will be inserted here by JS -->
                 </div>
-                <a href="https://www.youtube.com/watch?v=rokGy0huYEA" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=rokGy0huYEA" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF" download="Amor Pirata 1.mp3" class="action-btn download-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Descargar
+                    </a>
+                </div>
                 <div class="audio-player">
-                    <audio src="audio/Amor Pirata 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <audio src="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF" preload="metadata"></audio>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
-        <!-- Song 2 -->
-        <article class="song-item" data-youtube-id="9g8KcxjA308">
-            <h2 class="song-title">Amor Pirata 2</h2>
+        <article class="song-item" 
+                 data-song-title-group="Amor Pirata"
+                 data-song-version-title="Amor Pirata 2"
+                 data-youtube-id="9g8KcxjA308" 
+                 data-cover-img="img/cover_amor_pirata_2.webp"
+                 data-song-src="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0">
+            <h2 class="song-title-display">Amor Pirata 2</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_2.webp" alt="Cover for Amor Pirata 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=9g8KcxjA308" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=9g8KcxjA308" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0" download="Amor Pirata 2.mp3" class="action-btn download-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Descargar
+                    </a>
+                </div>
                 <div class="audio-player">
-                    <audio src="audio/Amor Pirata 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <audio src="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0" preload="metadata"></audio>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
-        <!-- Song 3 -->
-        <article class="song-item" data-youtube-id="IQJegS7pSGM">
-            <h2 class="song-title">Amor Pirata 3</h2>
+        <article class="song-item" 
+                 data-song-title-group="Amor Pirata"
+                 data-song-version-title="Amor Pirata 3"
+                 data-youtube-id="IQJegS7pSGM" 
+                 data-cover-img="img/cover_amor_pirata_3.webp"
+                 data-song-src="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk">
+            <h2 class="song-title-display">Amor Pirata 3</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_3.webp" alt="Cover for Amor Pirata 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=IQJegS7pSGM" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=IQJegS7pSGM" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk" download="Amor Pirata 3.mp3" class="action-btn download-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Descargar
+                    </a>
+                </div>
                 <div class="audio-player">
-                    <audio src="audio/Amor Pirata 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <audio src="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk" preload="metadata"></audio>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
-        <!-- Song 4 -->
-        <article class="song-item" data-youtube-id="jNQXAC9IVRw">
-            <h2 class="song-title">Amor Pirata 4</h2>
+        <article class="song-item" 
+                 data-song-title-group="Amor Pirata"
+                 data-song-version-title="Amor Pirata 4"
+                 data-youtube-id="jNQXAC9IVRw" 
+                 data-cover-img="img/cover_amor_pirata_4.webp"
+                 data-song-src="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu">
+            <h2 class="song-title-display">Amor Pirata 4</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_4.webp" alt="Cover for Amor Pirata 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu" download="Amor Pirata 4.mp3" class="action-btn download-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Descargar
+                    </a>
+                </div>
                 <div class="audio-player">
-                    <audio src="audio/Amor Pirata 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <audio src="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu" preload="metadata"></audio>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p>
-                <p><strong>Género:</strong> POP</p>
+                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p><p><strong>Género:</strong> POP</p>
             </div>
         </article>
 
-        <!-- Song 5 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Amor Pirata 5</h2>
+        <article class="song-item" 
+                 data-song-title-group="Amor Pirata"
+                 data-song-version-title="Amor Pirata 5"
+                 data-youtube-id="gOqlwlQjVis" 
+                 data-cover-img="img/cover_amor_pirata_5.webp"
+                 data-song-src="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY">
+            <h2 class="song-title-display">Amor Pirata 5</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_5.webp" alt="Cover for Amor Pirata 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY" download="Amor Pirata 5.mp3" class="action-btn download-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Descargar
+                    </a>
+                </div>
                 <div class="audio-player">
-                    <audio src="audio/Amor Pirata 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <audio src="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY" preload="metadata"></audio>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 3</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 3</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
-        <!-- Song 6 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Le Pido a Dios 1</h2>
+        <article class="song-item" 
+                 data-song-title-group="Le Pido a Dios"
+                 data-song-version-title="Le Pido a Dios 1"
+                 data-youtube-id="VIDEO_ID_LE_PIDO_1" 
+                 data-cover-img="img/cover_le_pido_a_dios_1.webp"
+                 data-song-src="audio/Le Pido a Dios 1.mp3">
+            <h2 class="song-title-display">Le Pido a Dios 1</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_le_pido_a_dios_1.webp" alt="Cover for Le Pido a Dios 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_LE_PIDO_1" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                    </div>
                 <div class="audio-player">
                     <audio src="audio/Le Pido a Dios 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con mas Amor</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
-        <!-- Song 7 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Le Pido a Dios 2</h2>
+        <article class="song-item" 
+                 data-song-title-group="Le Pido a Dios"
+                 data-song-version-title="Le Pido a Dios 2"
+                 data-youtube-id="VIDEO_ID_LE_PIDO_2" 
+                 data-cover-img="img/cover_le_pido_a_dios_2.webp"
+                 data-song-src="audio/Le Pido a Dios 2.mp3">
+            <h2 class="song-title-display">Le Pido a Dios 2</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_le_pido_a_dios_2.webp" alt="Cover for Le Pido a Dios 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
+                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_LE_PIDO_2" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
                 <div class="audio-player">
                     <audio src="audio/Le Pido a Dios 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
                     <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
                     <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
+                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
+                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
                     </div>
                 </div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p><p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con mas Amor</p><p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
+        </div>
 
-        <!-- Song 8 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Le Pido a Dios 3</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_le_pido_a_dios_3.webp" alt="Cover for Le Pido a Dios 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Le Pido a Dios 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 9 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Le Pido a Dios 4</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_le_pido_a_dios_4.webp" alt="Cover for Le Pido a Dios 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Le Pido a Dios 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 10 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Le Pido a Dios 5</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_le_pido_a_dios_5.webp" alt="Cover for Le Pido a Dios 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Le Pido a Dios 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Salsa Romántica</p>
-            </div>
-        </article>
-
-        <!-- Song 11 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Enamorao de ti 1</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_enamorao_de_ti_1.webp" alt="Cover for Enamorao de ti 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Enamorao de ti 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Calipso</p>
-            </div>
-        </article>
-
-        <!-- Song 12 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Enamorao de ti 2</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_enamorao_de_ti_2.webp" alt="Cover for Enamorao de ti 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Enamorao de ti 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 13 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Enamorao de ti 3</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_enamorao_de_ti_3.webp" alt="Cover for Enamorao de ti 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Enamorao de ti 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 14 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Enamorao de ti 4</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_enamorao_de_ti_4.webp" alt="Cover for Enamorao de ti 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Enamorao de ti 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Salsa con Reggaetón</p>
-            </div>
-        </article>
-
-        <!-- Song 15 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Enamorao de ti 5</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_enamorao_de_ti_5.webp" alt="Cover for Enamorao de ti 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Enamorao de ti 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Salsa con Reggaetón</p>
-            </div>
-        </article>
-
-        <!-- Song 16 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Cuando Amanece 1</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_cuando amanece_1.webp" alt="Cover for Cuando Amanece 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Cuando Amanece 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Hip POP</p>
-            </div>
-        </article>
-
-        <!-- Song 17 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Cuando Amanece 2</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_cuando amanece_2.webp" alt="Cover for Cuando Amanece 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Cuando Amanece 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 18 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Cuando Amanece 3</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_cuando amanece_3.webp" alt="Cover for Cuando Amanece 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Cuando Amanece 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 19 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Cuando Amanece 4</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_cuando amanece_4.webp" alt="Cover for Cuando Amanece 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Cuando Amanece 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Pop Rock</p>
-            </div>
-        </article>
-
-        <!-- Song 20 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Cuando Amanece 5</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_cuando amanece_5.webp" alt="Cover for Cuando Amanece 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Cuando Amanece 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 21 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Que Pensaran de Mi 1</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cober_que_pensaran_de _mi_1.webp" alt="Cover for Que Pensaran de Mi 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Que Pensaran de Mi 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 22 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Que Pensaran de Mi 2</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cober_que_pensaran_de _mi_2.webp" alt="Cover for Que Pensaran de Mi 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Que Pensaran de Mi 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón</p>
-            </div>
-        </article>
-
-        <!-- Song 23 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Que Pensaran de Mi 3</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cober_que_pensaran_de _mi_3.webp" alt="Cover for Que Pensaran de Mi 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Que Pensaran de Mi 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-        <!-- Song 24 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Que Pensaran de Mi 4</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cober_que_pensaran_de _mi_4.webp" alt="Cover for Que Pensaran de Mi 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Que Pensaran de Mi 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggae</p>
-            </div>
-        </article>
-
-        <!-- Song 25 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">Que Pensaran de Mi 5</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cober_que_pensaran_de _mi_5.webp" alt="Cover for Que Pensaran de Mi 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/Que Pensaran de Mi 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón</p>
-            </div>
-        </article>
-
-        <!-- Song 26 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">La Chinita 1</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_la_chinita_1.webp" alt="Cover for La Chinita 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/La Chinita 1.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong>  Hip Pop</p>
-            </div>
-        </article>
-
-        <!-- Song 27 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">La Chinita 2</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_la_chinita_2.webp" alt="Cover for La Chinita 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/La Chinita 2.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong>   Pop Rock</p>
-            </div>
-        </article>
-
-        <!-- Song 28 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">La Chinita 3</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_la_chinita_3.webp" alt="Cover for La Chinita 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/La Chinita 3.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Trap Pop</p>
-            </div>
-        </article>
-
-        <!-- Song 29 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">La Chinita 4</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_la_chinita_4.webp" alt="Cover for La Chinita 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/La Chinita 4.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Vercion latino</p>
-            </div>
-        </article>
-
-        <!-- Song 30 -->
-        <article class="song-item" data-youtube-id="gOqlwlQjVis">
-            <h2 class="song-title">La Chinita 5</h2>
-            <div class="media-container">
-                <div class="video-wrapper">
-                    <img src="img/cover_la_chinita_5.webp" alt="Cover for La Chinita 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
-                </div>
-                <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="youtube-link-btn">
-                    Ver en YouTube
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-left: 8px;">
-                        <path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/>
-                    </svg>
-                </a>
-                <div class="audio-player">
-                    <audio src="audio/La Chinita 5.mp3" preload="metadata"></audio>
-                    <button class="prev-song-btn" aria-label="Previous Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg>
-                    </button>
-                    <button class="play-pause-btn" aria-label="Play">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
-                    <button class="next-song-btn" aria-label="Next Song">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg>
-                    </button>
-                    <div class="controls">
-                        <div class="time-display">
-                            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-filled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p>
-                <p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p>
-                <p><strong>Género:</strong> Reggaetón Romántico</p>
-            </div>
-        </article>
-
-    </main>
 
     <footer>
         <div class="social-links">
             <a href="https://t.me/Pirata_Coin" target="_blank" class="social-icon telegram">
               <img src="img/Telegram.webp" alt="Telegram">
             </a>
-            <a href="https://www.youtube.com/@PirataCoinMusic" target="_blank" class="social-icon youtube">
-              <img src="img/Youtube.webp" alt="YouTube">
+            <a href="https://www.youtube.com/@PIRATACOINMUSIC" target="_blank" class="social-icon youtube"> <img src="img/Youtube.webp" alt="YouTube">
             </a>
             <a href="https://wa.me/5359416304" target="_blank" class="social-icon watsapp">
               <img src="img/watsapp.webp" alt="watsapp">
             </a>
           </div>
-          <a href="piratacoin@gmail.com" class="email-link">piratacoin@gmail.com</a>
-
-
-        <p>&copy; 2025 Pirata Coin Music. Todos los derechos reservados.</p>
+          <a href="mailto:piratacoin@gmail.com" class="email-link">piratacoin@gmail.com</a> <p>© 2025 Pirata Coin Music. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
