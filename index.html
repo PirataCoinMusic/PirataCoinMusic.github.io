@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pirata Coin Music</title>
-    <link rel="icon" href="ico/favicon.ico" type="image/webp">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="icon" href="ico/favicon.ico" type="image/webp"> <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
     <header>
-        <img src="img/Portada.webp" alt="Pirata Coin Music Logo" id="logo">
-        <h1>PIRATA COIN MUSIC</h1>
+        <img src="img/Portada.webp" alt="Pirata Coin Music Logo" id="logo"> <h1>PIRATA COIN MUSIC</h1>
     </header>
 
     <nav id="navigation-controls" class="navigation-controls">
         <button id="back-to-titles-btn" class="action-btn" style="display: none;">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
             Volver a Títulos
-        </button>
-        <button id="play-all-versions-btn" class="action-btn" style="display: none;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            Reproducir Todas las Versiones
         </button>
     </nav>
 
@@ -45,289 +38,1028 @@
                  data-song-version-title="Amor Pirata 1"
                  data-youtube-id="rokGy0huYEA" 
                  data-cover-img="img/cover_amor_pirata_1.webp"
-                 data-song-src="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF">
+                 data-mega-embed-url="https://mega.nz/embed/HMlSBYqL#8TAn9-vPAfu74UvbMoVZfBfLFdVSDDbCL1zz1qjMv9I!1v1c">
             <h2 class="song-title-display">Amor Pirata 1</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_1.webp" alt="Cover for Amor Pirata 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video">
-                        <svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                    </button>
                 </div>
                 <div class="song-actions">
                     <a href="https://www.youtube.com/watch?v=rokGy0huYEA" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    <a href="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF" download="Amor Pirata 1.mp3" class="action-btn download-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                        Descargar
-                    </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="https://drive.google.com/uc?export=download&id=1X5ESzrGbz9qGxEWYyg9D4y07oJXnsXFF" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
-
         <article class="song-item" 
                  data-song-title-group="Amor Pirata"
                  data-song-version-title="Amor Pirata 2"
                  data-youtube-id="9g8KcxjA308" 
                  data-cover-img="img/cover_amor_pirata_2.webp"
-                 data-song-src="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0">
+                 data-mega-embed-url="https://mega.nz/embed/2NVkUZJZ#eok7FjV--crX8xNkC0qHVZ6xCCTqCnNEWkVCpmXy1no!1v1c">
             <h2 class="song-title-display">Amor Pirata 2</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_2.webp" alt="Cover for Amor Pirata 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
                     <a href="https://www.youtube.com/watch?v=9g8KcxjA308" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    <a href="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0" download="Amor Pirata 2.mp3" class="action-btn download-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                        Descargar
-                    </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="https://drive.google.com/uc?export=download&id=14x0J4ZcmUhGIN0AjQQtivKcg0Wt0WcU0" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 1</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
-
         <article class="song-item" 
                  data-song-title-group="Amor Pirata"
                  data-song-version-title="Amor Pirata 3"
                  data-youtube-id="IQJegS7pSGM" 
                  data-cover-img="img/cover_amor_pirata_3.webp"
-                 data-song-src="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk">
+                 data-mega-embed-url="https://mega.nz/embed/2ItlQT6B#HXvVIHPeoNBH2A-FqxIdj3-LaNcdidIR3kBaseu6G_k!1v1c">
             <h2 class="song-title-display">Amor Pirata 3</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_3.webp" alt="Cover for Amor Pirata 3" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
                     <a href="https://www.youtube.com/watch?v=IQJegS7pSGM" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    <a href="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk" download="Amor Pirata 3.mp3" class="action-btn download-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                        Descargar
-                    </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="https://drive.google.com/uc?export=download&id=18Up7NAPBnAt_wAyMpYSNI4F3amzmT6Lk" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p> 
             </div>
         </article>
-
         <article class="song-item" 
                  data-song-title-group="Amor Pirata"
                  data-song-version-title="Amor Pirata 4"
                  data-youtube-id="jNQXAC9IVRw" 
                  data-cover-img="img/cover_amor_pirata_4.webp"
-                 data-song-src="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu">
+                 data-mega-embed-url="https://mega.nz/embed/LJEijaAK#4RPTX4JgU1YphXWIAdnFqOA7vTpdXa_uFKwa8wQV9hA!1v1c">
             <h2 class="song-title-display">Amor Pirata 4</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_4.webp" alt="Cover for Amor Pirata 4" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
                     <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    <a href="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu" download="Amor Pirata 4.mp3" class="action-btn download-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                        Descargar
-                    </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="https://drive.google.com/uc?export=download&id=1wSGx010XevM49blp6Z4QJH07nORQRLlu" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 2</p><p><strong>Género:</strong> POP</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> POP</p>
             </div>
         </article>
-
         <article class="song-item" 
                  data-song-title-group="Amor Pirata"
                  data-song-version-title="Amor Pirata 5"
                  data-youtube-id="gOqlwlQjVis" 
                  data-cover-img="img/cover_amor_pirata_5.webp"
-                 data-song-src="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY">
+                 data-mega-embed-url="https://mega.nz/embed/bR0i0RIY#5ZyYzwDKPwoBSlUOmGFWln2n5Nr-HLijI4VWKfaUgH4!1v1c">
             <h2 class="song-title-display">Amor Pirata 5</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_amor_pirata_5.webp" alt="Cover for Amor Pirata 5" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
                     <a href="https://www.youtube.com/watch?v=gOqlwlQjVis" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    <a href="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY" download="Amor Pirata 5.mp3" class="action-btn download-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                        Descargar
-                    </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="https://drive.google.com/uc?export=download&id=1deTkjp7r_VKeJmDbS8ef6jrgmfU5LDgY" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> El Pirata Records</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Tesoros Musicales Vol. 3</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
 
         <article class="song-item" 
                  data-song-title-group="Le Pido a Dios"
                  data-song-version-title="Le Pido a Dios 1"
-                 data-youtube-id="VIDEO_ID_LE_PIDO_1" 
+                 data-youtube-id="YOUTUBE_ID_LE_PIDO_1" 
                  data-cover-img="img/cover_le_pido_a_dios_1.webp"
-                 data-song-src="audio/Le Pido a Dios 1.mp3">
+                 data-mega-embed-url="https://mega.nz/embed/rYUCxAhL#iSqGnk020fG52O0geeRusB0PxO57rR3Bv4PV2mD4wuk!1v1c">
             <h2 class="song-title-display">Le Pido a Dios 1</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_le_pido_a_dios_1.webp" alt="Cover for Le Pido a Dios 1" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_LE_PIDO_1" target="_blank" class="action-btn youtube-link-btn">
+                     <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LE_PIDO_1" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
-                    </div>
-                <div class="audio-player">
-                    <audio src="audio/Le Pido a Dios 1.mp3" preload="metadata"></audio>
+                </div>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
-
         <article class="song-item" 
                  data-song-title-group="Le Pido a Dios"
                  data-song-version-title="Le Pido a Dios 2"
-                 data-youtube-id="VIDEO_ID_LE_PIDO_2" 
+                 data-youtube-id="YOUTUBE_ID_LE_PIDO_2" 
                  data-cover-img="img/cover_le_pido_a_dios_2.webp"
-                 data-song-src="audio/Le Pido a Dios 2.mp3">
+                 data-mega-embed-url="https://mega.nz/embed/OBkkkIZL#yQGiSjCCbZGZgrjUq9KPz5ZTirI9G4gAAGRA6qMlCiw!1v1c">
             <h2 class="song-title-display">Le Pido a Dios 2</h2>
             <div class="media-container">
                 <div class="video-wrapper">
                     <img src="img/cover_le_pido_a_dios_2.webp" alt="Cover for Le Pido a Dios 2" class="song-cover">
-                    <button class="play-video-btn" aria-label="Play Video"><svg class="play-video-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
                 </div>
                 <div class="song-actions">
-                    <a href="https://www.youtube.com/watch?v=VIDEO_ID_LE_PIDO_2" target="_blank" class="action-btn youtube-link-btn">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LE_PIDO_2" target="_blank" class="action-btn youtube-link-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
                         Ver en YouTube
                     </a>
                 </div>
-                <div class="audio-player">
-                    <audio src="audio/Le Pido a Dios 2.mp3" preload="metadata"></audio>
+                <div class="player-controls">
                     <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
-                    <button class="play-pause-btn" aria-label="Play">
+                    <button class="play-mega-btn" aria-label="Play Song">
                         <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                     </button>
                     <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
-                    <div class="controls">
-                        <div class="time-display"><span class="current-time">0:00</span> / <span class="total-time">0:00</span></div>
-                        <div class="progress-bar-container"><div class="progress-bar-filled"></div></div>
-                    </div>
                 </div>
+                <div class="mega-iframe-container"></div>
             </div>
             <div class="song-info">
-                <p><strong>Productor:</strong> Pirata Coin Music</p><p><strong>Año:</strong> 2025</p>
-                <p><strong>Álbum:</strong> Con mas Amor</p><p><strong>Género:</strong> Reggaetón Romántico</p>
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
             </div>
         </article>
-        </div>
+        <article class="song-item" 
+                 data-song-title-group="Le Pido a Dios"
+                 data-song-version-title="Le Pido a Dios 3"
+                 data-youtube-id="YOUTUBE_ID_LE_PIDO_3" 
+                 data-cover-img="img/cover_le_pido_a_dios_3.webp"
+                 data-mega-embed-url="https://mega.nz/embed/TU1wza5Y#-7_uRAz67KbBzD4fg_hd15YsLytF5pozGIyB58e-AU8!1v1c">
+            <h2 class="song-title-display">Le Pido a Dios 3</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_le_pido_a_dios_3.webp" alt="Cover for Le Pido a Dios 3" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LE_PIDO_3" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Le Pido a Dios"
+                 data-song-version-title="Le Pido a Dios 4"
+                 data-youtube-id="YOUTUBE_ID_LE_PIDO_4" 
+                 data-cover-img="img/cover_le_pido_a_dios_4.webp"
+                 data-mega-embed-url="https://mega.nz/embed/KBFBjYrQ#dL-y4Xnplp2FMuCTgR0Yk-UxHUFfbYwUtN0EtavfIto!1v1c">
+            <h2 class="song-title-display">Le Pido a Dios 4</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_le_pido_a_dios_4.webp" alt="Cover for Le Pido a Dios 4" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LE_PIDO_4" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Le Pido a Dios"
+                 data-song-version-title="Le Pido a Dios 5"
+                 data-youtube-id="YOUTUBE_ID_LE_PIDO_5" 
+                 data-cover-img="img/cover_le_pido_a_dios_5.webp"
+                 data-mega-embed-url="https://mega.nz/embed/TZNUnKwR#UKHFmLCeSZ59kPBkEYCEEgH0wqYOOTowd6ovjQOCAdI!1v1c">
+            <h2 class="song-title-display">Le Pido a Dios 5</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_le_pido_a_dios_5.webp" alt="Cover for Le Pido a Dios 5" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LE_PIDO_5" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> Reggaetón Romántico</p>
+            </div>
+        </article>
+
+        <article class="song-item" 
+                 data-song-title-group="Cuando Amanece"
+                 data-song-version-title="Cuando Amanece 1"
+                 data-youtube-id="YOUTUBE_ID_CUANDO_AMANECE_1" 
+                 data-cover-img="img/cover_cuando_amanece_1.webp"
+                 data-mega-embed-url="https://mega.nz/embed/TdFgUbCL#pzoObQN_M2_DR63utB8HhgyVjV7HjXxvWLgmJ7zVHsI!1v1c">
+            <h2 class="song-title-display">Cuando Amanece 1</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_cuando_amanece_1.webp" alt="Cover for Cuando Amanece 1" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_CUANDO_AMANECE_1" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Cuando Amanece"
+                 data-song-version-title="Cuando Amanece 2"
+                 data-youtube-id="YOUTUBE_ID_CUANDO_AMANECE_2" 
+                 data-cover-img="img/cover_cuando_amanece_2.webp"
+                 data-mega-embed-url="https://mega.nz/embed/OQ8DmLBJ#1dwlzDwDMq7o67lXat7hE1bStUb0aBey-PRes83pV-w!1v1c">
+            <h2 class="song-title-display">Cuando Amanece 2</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_cuando_amanece_2.webp" alt="Cover for Cuando Amanece 2" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_CUANDO_AMANECE_2" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Cuando Amanece"
+                 data-song-version-title="Cuando Amanece 3"
+                 data-youtube-id="YOUTUBE_ID_CUANDO_AMANECE_3" 
+                 data-cover-img="img/cover_cuando_amanece_3.webp"
+                 data-mega-embed-url="https://mega.nz/embed/jN0UXDiS#YdL3GdGIrydqAHXU9f_cBnrkq2mnOM6Hs_BcCHZLrIQ!1v1c">
+            <h2 class="song-title-display">Cuando Amanece 3</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_cuando_amanece_3.webp" alt="Cover for Cuando Amanece 3" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_CUANDO_AMANECE_3" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Cuando Amanece"
+                 data-song-version-title="Cuando Amanece 4"
+                 data-youtube-id="YOUTUBE_ID_CUANDO_AMANECE_4" 
+                 data-cover-img="img/cover_cuando_amanece_4.webp"
+                 data-mega-embed-url="https://mega.nz/embed/LdFBFQ4A#85nwHmjnJUbvgO5NRTIY6kP0bsgahHBsKpoVvdzlPB8!1v1c">
+            <h2 class="song-title-display">Cuando Amanece 4</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_cuando_amanece_4.webp" alt="Cover for Cuando Amanece 4" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_CUANDO_AMANECE_4" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Cuando Amanece"
+                 data-song-version-title="Cuando Amanece 5"
+                 data-youtube-id="YOUTUBE_ID_CUANDO_AMANECE_5" 
+                 data-cover-img="img/cover_cuando_amanece_5.webp"
+                 data-mega-embed-url="https://mega.nz/embed/SYETFSpJ#h0wNLdTToVnW-6GNwLUOgugU1ADJ2t4JdDOl0RjEhNM!1v1c">
+            <h2 class="song-title-display">Cuando Amanece 5</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_cuando_amanece_5.webp" alt="Cover for Cuando Amanece 5" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_CUANDO_AMANECE_5" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+
+        <article class="song-item" 
+                 data-song-title-group="Enamorao de Ti"
+                 data-song-version-title="Enamorao de Ti 1"
+                 data-youtube-id="YOUTUBE_ID_ENAMORAO_1" 
+                 data-cover-img="img/cover_enamorao_de_ti_1.webp"
+                 data-mega-embed-url="https://mega.nz/embed/PMN1XZhL#wnyY4kzgTVdHFTBW9MUulcb-ekqtMBHbcyzqp5xaNCk!1v1c">
+            <h2 class="song-title-display">Enamorao de Ti 1</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_enamorao_de_ti_1.webp" alt="Cover for Enamorao de Ti 1" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_ENAMORAO_1" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Enamorao de Ti"
+                 data-song-version-title="Enamorao de Ti 2"
+                 data-youtube-id="YOUTUBE_ID_ENAMORAO_2" 
+                 data-cover-img="img/cover_enamorao_de_ti_2.webp"
+                 data-mega-embed-url="https://mega.nz/embed/iVcxWaTY#7wwW2oYt2cU5cDTXpW7zWY0vSxBx-aJQ9DB3S3LGih4!1v1c">
+            <h2 class="song-title-display">Enamorao de Ti 2</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_enamorao_de_ti_2.webp" alt="Cover for Enamorao de Ti 2" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_ENAMORAO_2" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Enamorao de Ti"
+                 data-song-version-title="Enamorao de Ti 3"
+                 data-youtube-id="YOUTUBE_ID_ENAMORAO_3" 
+                 data-cover-img="img/cover_enamorao_de_ti_3.webp"
+                 data-mega-embed-url="https://mega.nz/embed/WZkgAIKZ#4LjRc3Rgb-7HNsJKawR51a11pDjgQJhlTB3JHcaC5wE!1v1c">
+            <h2 class="song-title-display">Enamorao de Ti 3</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_enamorao_de_ti_3.webp" alt="Cover for Enamorao de Ti 3" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_ENAMORAO_3" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Enamorao de Ti"
+                 data-song-version-title="Enamorao de Ti 4"
+                 data-youtube-id="YOUTUBE_ID_ENAMORAO_4" 
+                 data-cover-img="img/cover_enamorao_de_ti_4.webp"
+                 data-mega-embed-url="https://mega.nz/embed/aRlDAKCa#kKAHYi_vJFJaGfCQRgjKCInhewO4Mok9S7Mq7CJjHNA!1v1c">
+            <h2 class="song-title-display">Enamorao de Ti 4</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_enamorao_de_ti_4.webp" alt="Cover for Enamorao de Ti 4" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_ENAMORAO_4" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="Enamorao de Ti"
+                 data-song-version-title="Enamorao de Ti 5"
+                 data-youtube-id="YOUTUBE_ID_ENAMORAO_5" 
+                 data-cover-img="img/cover_enamorao_de_ti_5.webp"
+                 data-mega-embed-url="https://mega.nz/embed/zJVmnAiZ#i2O_k25QnCW32npTGLxJKNEEXuCZAeUVUM3sCET2A3g!1v1c">
+            <h2 class="song-title-display">Enamorao de Ti 5</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_enamorao_de_ti_5.webp" alt="Cover for Enamorao de Ti 5" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_ENAMORAO_5" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+
+        <article class="song-item" 
+                 data-song-title-group="La Chinita"
+                 data-song-version-title="La Chinita 1"
+                 data-youtube-id="YOUTUBE_ID_LA_CHINITA_1" 
+                 data-cover-img="img/cover_la_chinita_1.webp"
+                 data-mega-embed-url="https://mega.nz/embed/3J8QGSBB#6DRJDmgo3fU2KZBgql_pQ4ZdFFJ3VwqhMdeYhmDgPuI!1v1c">
+            <h2 class="song-title-display">La Chinita 1</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_la_chinita_1.webp" alt="Cover for La Chinita 1" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LA_CHINITA_1" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="La Chinita"
+                 data-song-version-title="La Chinita 2"
+                 data-youtube-id="YOUTUBE_ID_LA_CHINITA_2" 
+                 data-cover-img="img/cover_la_chinita_2.webp"
+                 data-mega-embed-url="https://mega.nz/embed/LBkxGBrQ#6ontcf3gXqa2Cx5Ng8_zMAa8LqMqsxiqt19HTchfxlk!1v1c">
+            <h2 class="song-title-display">La Chinita 2</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_la_chinita_2.webp" alt="Cover for La Chinita 2" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LA_CHINITA_2" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="La Chinita"
+                 data-song-version-title="La Chinita 3"
+                 data-youtube-id="YOUTUBE_ID_LA_CHINITA_3" 
+                 data-cover-img="img/cover_la_chinita_3.webp"
+                 data-mega-embed-url="https://mega.nz/embed/7RU1CD7R#uBIPPohWKo5z_J98SvfekSGEyenRoZ1X_z83mvAHgH4!1v1c">
+            <h2 class="song-title-display">La Chinita 3</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_la_chinita_3.webp" alt="Cover for La Chinita 3" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LA_CHINITA_3" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="La Chinita"
+                 data-song-version-title="La Chinita 4"
+                 data-youtube-id="YOUTUBE_ID_LA_CHINITA_4" 
+                 data-cover-img="img/cover_la_chinita_4.webp"
+                 data-mega-embed-url="https://mega.nz/embed/eV8zUIbT#N1c6FqsT6j9D-bszWNYMSuD5R0d1me8paaQMe_Q-Z6g!1v1c">
+            <h2 class="song-title-display">La Chinita 4</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_la_chinita_4.webp" alt="Cover for La Chinita 4" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LA_CHINITA_4" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="La Chinita"
+                 data-song-version-title="La Chinita 5"
+                 data-youtube-id="YOUTUBE_ID_LA_CHINITA_5" 
+                 data-cover-img="img/cover_la_chinita_5.webp"
+                 data-mega-embed-url="https://mega.nz/embed/DB9kVKoB#UrzafcGb05e_-zvh_RI1OwdJp_q1UTDKLp67LqB_NkY!1v1c">
+            <h2 class="song-title-display">La Chinita 5</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_la_chinita_5.webp" alt="Cover for La Chinita 5" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_LA_CHINITA_5" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+
+        <article class="song-item" 
+                 data-song-title-group="¿Qué pensarán de mí?"
+                 data-song-version-title="¿Qué pensarán de mí? 1"
+                 data-youtube-id="YOUTUBE_ID_QPDM_1" 
+                 data-cover-img="img/cover_qpd_1.webp"
+                 data-mega-embed-url="https://mega.nz/embed/zMM2wKgS#K3cvRE-3biMRVN-It59b-KFmhd879c7ZIZZT7_HUQmA!1v1c">
+            <h2 class="song-title-display">¿Qué pensarán de mí? 1</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_qpd_1.webp" alt="Cover for ¿Qué pensarán de mí? 1" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_QPDM_1" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="¿Qué pensarán de mí?"
+                 data-song-version-title="¿Qué pensarán de mí? 2"
+                 data-youtube-id="YOUTUBE_ID_QPDM_2" 
+                 data-cover-img="img/cover_qpd_2.webp"
+                 data-mega-embed-url="https://mega.nz/embed/bIlWQLBY#tIKu4J2DDp6QdcLsqJ266Ti2j1oZ2YZsUZcYvXnW-KM!1v1c">
+            <h2 class="song-title-display">¿Qué pensarán de mí? 2</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_qpd_2.webp" alt="Cover for ¿Qué pensarán de mí? 2" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_QPDM_2" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="¿Qué pensarán de mí?"
+                 data-song-version-title="¿Qué pensarán de mí? 3"
+                 data-youtube-id="YOUTUBE_ID_QPDM_3" 
+                 data-cover-img="img/cover_qpd_3.webp"
+                 data-mega-embed-url="https://mega.nz/embed/GRclmTTK#5-CVLmMZl5grbKyH-xYnGBXEQPi-YrW4uV3WbUMg4cE!1v1c">
+            <h2 class="song-title-display">¿Qué pensarán de mí? 3</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_qpd_3.webp" alt="Cover for ¿Qué pensarán de mí? 3" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_QPDM_3" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="¿Qué pensarán de mí?"
+                 data-song-version-title="¿Qué pensarán de mí? 4"
+                 data-youtube-id="YOUTUBE_ID_QPDM_4" 
+                 data-cover-img="img/cover_qpd_4.webp"
+                 data-mega-embed-url="https://mega.nz/embed/vU0TTDJS#W0zush1Hazzr5E6E0eniN7VkarRBCznmWZF3NrU2ZEg!1v1c">
+            <h2 class="song-title-display">¿Qué pensarán de mí? 4</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_qpd_4.webp" alt="Cover for ¿Qué pensarán de mí? 4" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_QPDM_4" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+        <article class="song-item" 
+                 data-song-title-group="¿Qué pensarán de mí?"
+                 data-song-version-title="¿Qué pensarán de mí? 5"
+                 data-youtube-id="YOUTUBE_ID_QPDM_5" 
+                 data-cover-img="img/cover_qpd_5.webp"
+                 data-mega-embed-url="https://mega.nz/embed/zMM2wKgS#K3cvRE-3biMRVN-It59b-KFmhd879c7ZIZZT7_HUQmA!1v1c"> 
+            <h2 class="song-title-display">¿Qué pensarán de mí? 5</h2>
+            <div class="media-container">
+                <div class="video-wrapper">
+                    <img src="img/cover_qpd_5.webp" alt="Cover for ¿Qué pensarán de mí? 5" class="song-cover">
+                </div>
+                <div class="song-actions">
+                    <a href="https://www.youtube.com/watch?v=YOUTUBE_ID_QPDM_5" target="_blank" class="action-btn youtube-link-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21.582,6.186 C21.236,4.944 20.264,3.971 19.021,3.624 C17.499,3.23 12,3.23 12,3.23 C12,3.23 6.501,3.23 4.979,3.624 C3.736,3.971 2.764,4.944 2.418,6.186 C2.024,7.708 2.024,12 2.024,12 C2.024,12 2.024,16.292 2.418,17.814 C2.764,19.056 3.736,20.029 4.979,20.376 C6.501,20.77 12,20.77 12,20.77 C12,20.77 17.499,20.77 19.021,20.376 C20.264,20.029 21.236,19.056 21.582,17.814 C21.976,16.292 21.976,12 21.976,12 C21.976,12 21.976,7.708 21.582,6.186 Z M9.927,15.547 L9.927,8.453 L15.831,12 L9.927,15.547 Z"/></svg>
+                        Ver en YouTube
+                    </a>
+                </div>
+                <div class="player-controls">
+                    <button class="prev-song-btn" aria-label="Previous Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path></svg></button>
+                    <button class="play-mega-btn" aria-label="Play Song">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="next-song-btn" aria-label="Next Song"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6l-8.5 6 8.5 6V6zm2 12h2V6h-2v12z"></path></svg></button>
+                </div>
+                <div class="mega-iframe-container"></div>
+            </div>
+            <div class="song-info">
+                <p><strong>Autor:</strong> El Pirata del Amor</p>
+                <p><strong>Productor:</strong> Pirata Coin Music</p>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Álbum:</strong> Con + Amor</p>
+                <p><strong>Género:</strong> (Especificar Género)</p>
+            </div>
+        </article>
+
+    </div>
 
 
     <footer>
@@ -344,6 +1076,6 @@
           <a href="mailto:piratacoin@gmail.com" class="email-link">piratacoin@gmail.com</a> <p>© 2025 Pirata Coin Music. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script.js"></script> </body>
 </html>
+
